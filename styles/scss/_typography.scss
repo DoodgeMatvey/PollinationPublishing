@@ -1,0 +1,103 @@
+$active-color: #f1cdb3;
+$main-bg-color: #f4ebdd;
+$button-color: #d3ad6f;
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+}
+*, *:before, *:after {  
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.title {
+    color: #303239;
+    font-size: 30.4px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.button-main {
+    background: transparent;
+    position: relative;
+    margin-top: 20.7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 35.6px;
+    border-radius: 19px;
+    border: 1px solid  #d3ad6f;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #d3ad6f;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background: #d3ad6f;
+        color: #fff;
+    }
+    &:hover .arrow__line {
+        background-color: #fff;
+    }
+    &:hover .arrow__top {
+        background-color: #fff;
+    }
+    &:hover .arrow__bottom {
+        background-color: #fff;
+    }
+}
+.arrow {
+    display: flex;
+    position: relative;
+    padding-left: 9px;
+    &__line {
+        width: 29px;
+        height: 2px;
+        border-radius: 5px;
+        background-color: #d3ad6f;
+        transition: all 0.4s ease-in-out;
+    }
+    &__top {
+        width: 8px;
+        height: 1.5px;
+        position: absolute;
+        right: -1px;
+        border-radius: 5px;
+        top: -2px;
+        transform: rotate(35deg);
+        background-color: #d3ad6f;
+        transition: all 0.4s ease-in-out;
+    }
+    &__bottom {
+        width: 8px;
+        height: 1.5px;
+        position: absolute;
+        right: -1.1px;
+        border-radius: 5px;
+        top: 2px;
+        transform: rotate(142deg);
+        background-color: #d3ad6f;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+.hash:target:before {
+    content: "";
+    display: block;
+    height: 104;
+    margin-top: 104;
+    visibility: hidden;
+}
+.padding-block-sec, .padding-block-t {
+    visibility: hidden;
+    position: absolute;
+    margin-top: -104px;
+}

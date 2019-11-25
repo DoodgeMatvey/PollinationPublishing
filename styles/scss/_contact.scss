@@ -1,0 +1,120 @@
+.contacts__title-block {
+    padding: 0;
+    background-color: #f4ebdd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 101.5px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 25px 159px 25px;
+    &__main {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+    &__secondary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    &__group {
+        position: relative;
+        margin-right: 33px;
+        width: 100%;
+        &--margin {
+            margin-bottom: 57px;
+            margin-right: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__input, &__text-area {
+        font-size: 14px;
+        padding: 10px;
+        display: block;
+        font-weight: normal;
+        width: 202px;
+        border: none;
+        border-bottom: 1px solid #c5c7cb;
+        &:focus {
+            outline: none;
+        }
+        &--width {
+            width: 100%;
+            max-height: 240px;
+            
+        }
+        &::placeholder {
+            color: #30323a;
+            font-size: 18px;
+        }
+        
+    }
+    &__button-main {
+        align-self: flex-end;
+        margin-top: 41px;
+    }
+    &__text-area {
+        min-height: 90px;
+    }
+    &__label, &__a-label {
+        color: #30323a;
+        font-size: 18px;
+        position: absolute;
+        pointer-events: none;
+        left: 10px;
+        top: 5px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    &__bar {
+        position: relative;
+        display: block;
+        width: 202px;
+        &::before, &::after {
+            content: "";
+            height: 2px;
+            width: 0;
+            bottom: 0;
+            position: absolute;
+            background: #d3ad6f;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+        &::before {
+            left: 50%;
+        }
+        &::after {
+            right: 50%;
+        }
+        &--width {
+            width: 100%;
+        }
+    }
+}
+.form__input:focus ~ .form__label, .form__input:valid ~ .form__label {
+    top: -15px;
+    font-size: 14px;
+    color: #d3ad6f;
+}
+.form__text-area:focus ~ .form__a-label, .form__text-area:valid ~ .form__a-label {
+    top: -15px;
+    font-size: 14px;
+    color: #d3ad6f;
+}
+.form__input:focus ~ .form__bar:before,
+.form__input:focus ~ .form__bar:after {
+    width: 50%;
+}
+.form__text-area:focus ~ .form__bar:before,
+.form__text-area:focus ~ .form__bar:after {
+    width: 50%;
+}

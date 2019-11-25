@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Light'), local('Poppins-Light'), url('Poppinslight.woff2') format('woff2'), url('Poppinslight.woff') format('woff'), url('Poppinslight.ttf') format('truetype');
+    font-weight: 300;
+    font-display: fallback;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: fallback;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Poppins-BoldSemiBold'), local('Poppins-SemiBold'), url('Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: fallback;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Italic'), local('Poppins-Italic'), url('Poppinsitalic.woff2') format('woff2'), url('Poppinsitalic.woff') format('woff'), url('Poppinsitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: fallback;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Light Italic'), local('Poppins-LightItalic'), url('Poppinslightitalic.woff2') format('woff2'), url('Poppinslightitalic.woff') format('woff'), url('Poppinslightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: fallback;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Poppins-SemiBoldMedium'), local('Poppins-Medium'), url('Poppinspoppins-semiboldmedium.woff2') format('woff2'), url('Poppinspoppins-semiboldmedium.woff') format('woff'), url('Poppinspoppins-semiboldmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: fallback;
+    font-style: normal;
+}
+
+

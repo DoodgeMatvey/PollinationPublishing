@@ -1,0 +1,43 @@
+.mission-statement {
+    background: #d3ad6f;
+    position: relative;
+    margin-top: 104px;
+    &__title {
+        font-size: 52.9px;
+        color: #303239;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 30.5px;
+    }
+    &__line {
+        width: 86px;
+        height: 0;
+        border: solid 1px #ffffff;
+    }
+    &__sec-text {
+        font-size: 19px;
+        color: #ffffff;
+        line-height: 1.89;
+        font-weight: 300;
+        margin-top: 40px;
+    }
+    
+    
+   
+   
+
+    &--padding {
+        padding: 66.5px 0 89px 0;
+    }
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 0; 
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url(../../img/clip.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+}

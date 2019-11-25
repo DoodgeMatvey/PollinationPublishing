@@ -1,0 +1,16 @@
+.brands {
+    
+    background-color: #F4EBDD;
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &--right-margin {
+        margin-right: 96px;
+    }
+    &--padding {
+        padding: 74px 0 80px 0;
+    }
+}

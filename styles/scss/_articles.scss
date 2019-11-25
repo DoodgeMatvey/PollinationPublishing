@@ -1,0 +1,129 @@
+.articles {
+    &__date-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__date {
+        margin-left: 18px;
+        font-size: 13px;
+        font-style: italic;
+        color: #5b5b5b;
+        font-weight: normal;
+    }
+    &__descr {
+        font-size: 15.7px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 1.89;
+        letter-spacing: 3.13px;
+        color: #d3ad6f;
+        margin-top: 8px;
+    }
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 54.9px;
+    }
+    &__text-more {
+
+    }
+    &__sec-text {
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 2.24;
+        letter-spacing: normal;
+        color: #8c8c98;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &--padding {
+        padding: 148.5px 0 120px;
+    }
+}
+.small-line {
+    width: 39px;
+    height: 0;
+    border: solid 1px #959595;
+}
+.articles-block {
+    margin-top: 125px;
+    &__date-main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__date {
+        font-size: 13px;
+        font-style: italic;
+        color: #5b5b5b;
+        font-weight: normal;
+        margin-right: 18px;
+    }
+    &__title {
+        font-size: 19.6px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #303239;
+        margin-top: 5.3px;
+    }
+    &__item {
+        margin-bottom: 65px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.show-less, .show-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin-top: 22.5px;
+    cursor: pointer;
+    &__text {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #303239;
+        margin-right: 16.1px;
+        user-select: none;
+        
+    }
+}
+
+.arrow-img {
+    user-select: none;
+}
+
+.article-sec {
+    display: none;
+}
+.article-third {
+    display: none;
+}
+.show-more {
+    display: none;
+}
+
+.d-hide {
+    display: none;
+}
+.display-b {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.d-visible {
+    display: block;
+}
+.arrow-more {
+    transform: rotate(180deg);
+}
